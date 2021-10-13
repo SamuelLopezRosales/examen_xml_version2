@@ -1,0 +1,8 @@
+1.- Lo primero es destacar que la clase comprobante y la clase Emisor heredan de la clase XML por lo tanto se pueden utilizar ambos atributos y metodos sin definirlos, pero tambien marca error porque no se a incluido dicho archivo
+
+2.- hay un error en la clase emisor el constructor esta protected, es necesario pasarlo a publico para poder crear objetos
+3.- ta,bien el constructor de la clase Main esta protected, es necesario tambien ponerlo en publico 
+4.- se paso el array_data directamente a la clase CDFI para distribuir los atributos directamente a donde corresponden, se utilizo la funcion setAttribute() de la clase XML ya que nos permite utilizarla en ambos objetos porque esta heredada 
+
+5.- el metodo setAtribute esta en privado se puso en publico para poder utilizarlo desde otro archivo 
+6.- el metodo private satic getNode se puso en publico para poder utilizar la palabra reservada $this y retornar la estructura
